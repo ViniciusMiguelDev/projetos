@@ -157,8 +157,8 @@ span {
 .services-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 25rem;
+  justify-content: space-evenly;
+  min-height: 20rem;
   margin-bottom: 1rem;
 }
 
@@ -355,6 +355,10 @@ footer {
   color: var(--main-color);
   margin: 1.8rem 0.5rem;
   transition: 0.5s ease;
+}
+
+.more-text {
+  display: none;
 }
 
 /*Media queries*/
