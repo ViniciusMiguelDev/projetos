@@ -27,13 +27,13 @@ Orders.forEach((order) => {
         <td>${order.productNumber}</td>
         <td>${order.paymentStatus}</td>
         <td class="${
-          order.status === "Declined"
+          order.status === "Negado"
             ? "danger"
-            : order.status === "Pending"
+            : order.status === "Pendente"
             ? "warning"
             : "primary"
         }">${order.status}</td>
-        <td class="primary">Details</td>
+        <td class="primary">Detalhes</td>
     `;
   tr.innerHTML = trContent;
   document.querySelector("table tbody").appendChild(tr);
