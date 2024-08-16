@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --main-color: #ffffff;
+  --main-color: #f14444;
   --text-color: #ffffff;
   --project-color: #3f3f3f;
   --bg-color-01: #3f3f3f;
@@ -159,7 +159,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 20rem;
   margin-bottom: 1rem;
 }
 
@@ -412,7 +411,7 @@ footer {
 
     .services-box {
         width: 100%;
-        min-height: 60rem;
+        min-height: 40rem;
         justify-content: space-evenly;
     }
 
@@ -428,10 +427,6 @@ footer {
         max-width: 65%;
     }
 
-    .services-box {
-        width: 100%;
-        min-height: 35rem;
-    }
 }
 
 /*Medium*/
@@ -456,8 +451,9 @@ footer {
         width: 50%;
     }
     .services-box {
-        width: 70%;
+        width: 80%;
         margin-bottom: 2rem;
+        min-height: 20rem;
     }
     .portfolio-container {
         grid-template-columns: auto auto;
@@ -479,11 +475,6 @@ footer {
         gap: 1.2rem;
 
     }
-
-    .services-box {
-      width: 65%;
-      margin-bottom: 2rem;
-  }
 }
 
 /*Extra Large*/
