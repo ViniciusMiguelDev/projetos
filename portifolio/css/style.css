@@ -34,6 +34,7 @@ html {
 body {
   background-color: var(--bg-color-01);
   color: var(--text-color);
+  width: 95vw;
 }
 
 header {
