@@ -1,8 +1,8 @@
 package models.entities;
 
-public class Product {
+public class Product extends OrderItem {
     private String name;
-    private Double price;
+    
 
     public Product() {
     }

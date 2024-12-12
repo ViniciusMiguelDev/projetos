@@ -2,7 +2,7 @@ package models.entities;
 
 public class OrderItem {
     private Integer quantity;
-    private Double price;
+    protected Double price;
     private Product produto;
 
     public OrderItem() {
