@@ -3,24 +3,15 @@ package models.entities;
 public class OrderItem {
     private Integer quantity;
     private Double price;
-
-    private Product product;
+    private Product produto;
 
     public OrderItem() {
     }
 
-    public OrderItem(Integer quantity, Double price, Product product) {
+    public OrderItem(Integer quantity, Double price, Product produto) {
         this.quantity = quantity;
         this.price = price;
-        this.product = product;
-    }
-
-    public Product getProduct() {
-        return product;
-    }
-
-    public void setProduct(Product product) {
-        this.product = product;
+        this.produto = produto;
     }
 
     public Integer getQuantity() {
@@ -39,19 +30,21 @@ public class OrderItem {
         this.price = price;
     }
 
-    public Double subTotal() {
-        Double sum = quantity * price;
-        return sum;
+    public Product getProduto() {
+        return produto;
     }
- 
-    @Override
-	public String toString() {
-		return product.getName() 
-				+ ", $" 
-				+ String.format("%.2f", price) 
-				+ ", Quantity: " 
-				+ quantity + 
-				", Subtotal: $" 
-				+ String.format("%.2f", subTotal());
-	}
+
+    public void setProduto(Product produto) {
+        this.produto = produto;
+    }
+
+    public Double subTotal(int quantity, double price) {
+        double subT = quantity * price;
+        return subT;
+    }
+
+    public String toString() {
+        return produto.getName() + ", $" + price + ", Quantity: " + quantity + ", Subtotal: $" + subTotal(quantity, price); 
+    }
+
 }

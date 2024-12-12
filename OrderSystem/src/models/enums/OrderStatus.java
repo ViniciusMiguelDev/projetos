@@ -1,8 +1,8 @@
 package models.enums;
 
 public enum OrderStatus {
-    PENDING_PAYMENT,
-    PROCESSING,
-    SHIPPED,
-    DELIVERED;
+  PENDING_PAYMENT,
+  PROCESSING,
+  SHIPPED,
+  DELIVERED;
 }
