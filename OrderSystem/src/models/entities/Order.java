@@ -8,7 +8,7 @@ import java.util.List;
 import models.enums.OrderStatus;
 
 public class Order {
-    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH/mm/ss");
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
     private Date moment;
     private OrderStatus status;
